@@ -12,3 +12,13 @@ Web 地图服务（WMS）能够根据用户的请求返回相应的地图（包�
 - 请求关于地图要素的信息 (GetFeatureInfo) 
 - 请求用户自定义样式 (GetStyles) 
 - 请求图例符号 (GetLegendGraphic)
+
+由各种不同GIS Server发布的WMS服务无需支持所有操作，但如果作为基本 WMS，则必须至少支持 GetCapabilities 和 GetMap 操作。
+
+WMS GetCapabilities实例
+
+http://sampleserver1.arcgisonline.com/ArcGIS/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0
+
+GetMap实例
+
+http://sampleserver1.arcgisonline.com/ArcGIS/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer/WMSServer?VERSION=1.3.0&REQUEST=GetMap&CRS=CRS:84&BBOX=-178.217598,18.924782,-66.969271,71.406235&WIDTH=765&HEIGHT=360&LAYERS=0,1&STYLES=,&EXCEPTIONS=application/vnd.ogc.se_xml&FORMAT=image/png&BGCOLOR=0xFFFFFF&TRANSPARENT=TRUE
