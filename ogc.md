@@ -26,3 +26,29 @@ http://sampleserver1.arcgisonline.com/ArcGIS/services/Specialty/ESRI_StatesCitie
 
 WFS 是通过 Web 提供地理要素服务的开放规范。Web 要素服务（WFS）支持对地理要素的插入，更新，删除，检索和发现服务。在通过 WFS 服务提供数据的情况下，任何使用 Web 服务的应用程序均可访问地图或企业级地理数据库中的地理要素。与返回地图图像的 OGC Web 地图服务 (WMS) 不同，WFS 服务返回的是带有几何和属性信息的实际要素，客户端可以将这些要素与属性用于任何类型的地理空间分析。WFS 服务也支持过滤器，由此用户可以在数据上执行空间查询和属性查询。
 
+3.	WFS
+WFS 是通过 Web 提供地理要素服务的开放规范。Web 要素服务（WFS）支持对地理要素的插入，更新，删除，检索和发现服务。在通过 WFS 服务提供数据的情况下，任何使用 Web 服务的应用程序均可访问地图或企业级地理数据库中的地理要素。与返回地图图像的 OGC Web 地图服务 (WMS) 不同，WFS 服务返回的是带有几何和属性信息的实际要素，客户端可以将这些要素与属性用于任何类型的地理空间分析。WFS 服务也支持过滤器，由此用户可以在数据上执行空间查询和属性查询。
+
+WFS 服务可用于任何支持 WFS 的客户端。通常，Web 浏览器是 WFS 服务最简单的客户端。您可通过 HTTP 发出 WFS 请求，之后，响应或异常将会通过浏览器返回。所有的 WFS 服务都支持三种操作：
+	GetCapabilities
+	DescribeFeatureType
+	GetFeature。
+
+GetCapabilities实例
+http://demo.opengeo.org/geoserver/wfs?request=getcapabilities
+GetFeature实例
+http://demo.opengeo.org/geoserver/wfs?request=getfeature&typeName=tasmania_roads
+
+通过WFS的web编辑，需要使用到事务性WFS服务，实现对源地理数据库的数据进行更改。
+4.	WPS
+开放地理空间联盟 (OGC) 的网络处理服务 (WPS) 规范是一种用于在 Web 上提供和执行地理空间处理的国际规范。您可通过在发布地理处理服务时启用 WPS 功能来创建 WPS 服务。
+
+客户端应用程序可通过向服务的 URL 附加参数来使用 WPS 服务。发布的 WPS 服务支持以下操作：
+	请求服务的元数据 (GetCapabilities)
+	请求有关可运行在服务上的进程的详细信息 (DescribeProcess)
+	请求运行一个由 WPS 服务实现的进程 (Execute)
+
+WPS实例
+http://demo.opengeo.org/geoserver/wps?request=getcapabilities
+
+
