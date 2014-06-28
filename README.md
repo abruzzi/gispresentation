@@ -25,7 +25,7 @@ gispresentation
 - CartoDB，演示
 - ArcGIS online，演示
 
-## 5. 专业地图服务产品 ## 
+## 5. 专业地图服务产品 ##
 - 使用专业地图服务产品的原因
 - 开源（MapServer，GeoServer）
 - 商业（ArcGIS，SuperMap）
