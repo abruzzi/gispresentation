@@ -1,0 +1,27 @@
+安装
+------
+1. 下载
+Scala 2.10.4
+Spark 1.0.0
+
+2. 配置
+export SCALA_HOME=/home/hduser/scala-2.10.4
+export PATH=$SCALA_HOME/bin:$PATH
+
+export SPARK_HOME=/home/hduser/spark-1.0.0-bin-hadoop2
+export PATH=$SPARK_HOME/bin:$PATH
+
+编辑$SPARK_HOME/conf/spark-env.sh
+export JAVA_HOME=${JAVA_HOME}  
+export SCALA_HOME=${SCALA_HOME}
+# add spark example jar to CLASSPATH  
+export SPARK_EXAMPLES_JAR=$SPARK_HOME/lib/spark-examples-1.0.0-hadoop2.2.0.jar
+
+3. 本地执行
+./bin/run-example SparkPi
+
+Pi is roughly 3.14284
+
+实例
+------
+spark-submit --class "SimpleApp" --master local[4] --jars simple/target/jackson-core-asl-1.9.13.jar,simple/target/jackson-mapper-asl-1.9.12.jar,simple/target/esri-geometry-api.jar,simple/target/spatial-sdk-hadoop.jar simple/target/simple-project-1.0.jar
