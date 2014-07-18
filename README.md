@@ -43,3 +43,6 @@ desktop: uDig, QGIS, gvSIG, ArcGIS, Google Earth
 client: geoext, openlayers. leaflet
 server: mapserver, geowebcache, deegree, geoserver, mapguide, gdal, mapnik
 database: postgreSQL, PostGIS, MySQL
+
+
+http://www.nezpercegis.org/picts/about-2.jpg
