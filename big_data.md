@@ -4,4 +4,4 @@
 
 ## GIS Tool for Hadoop
 
-<img src="resources/gis_tool.png" alt="gis_tool" style="width: 600px;"/> 
+<img src="resources/gis_tool.png" alt="gis_tool" style="width: 6x`00px;"/> 
