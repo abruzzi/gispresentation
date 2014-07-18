@@ -39,3 +39,7 @@ gispresentation
 ## 8. 总结 ##
 
 
+desktop: uDig, QGIS, gvSIG, ArcGIS, Google Earth
+client: geoext, openlayers. leaflet
+server: mapserver, geowebcache, deegree, geoserver, mapguide, gdal, mapnik
+database: postgreSQL, PostGIS, MySQL
